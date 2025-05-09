@@ -1,3 +1,4 @@
+'use server'
 import {PrismaClient, User} from "@/app/generated/prisma";
 
 const prisma = new PrismaClient()

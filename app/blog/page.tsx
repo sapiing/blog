@@ -6,6 +6,8 @@ import {z} from "zod";
 import {Input} from "@/components/ui/input";
 import {Button} from "@/components/ui/button";
 
+export const revalidate = 60; // Revalidate this page every 60 seconds
+
 export default async function BlogPage() {
     const posts = await getAllPosts()
     const author = await getAllUsers()
